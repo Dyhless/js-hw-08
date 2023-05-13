@@ -1,0 +1,1 @@
+{"mappings":"AACAA,QAAQC,IAAI,SAEZC,aAAaC,QAAQ,WAAY","sources":["src/js/02-video.js"],"sourcesContent":["\nconsole.log('Hello');\n\nlocalStorage.setItem('TEST_KEY', 'Hello wordl');"],"names":["console","log","localStorage","setItem"],"version":3,"file":"02-video.0b8aab82.js.map"}
