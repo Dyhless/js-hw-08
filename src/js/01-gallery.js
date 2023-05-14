@@ -59,3 +59,4 @@ function onGalleryItem(evt) {
   // Выводим ссылку на оригинальное изображение в консоль
   console.log(originalUrl);
 }
+
