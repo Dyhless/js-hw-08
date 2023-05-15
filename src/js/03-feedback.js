@@ -36,14 +36,17 @@ form.addEventListener('submit', function (event) {
     message: messageInput.value
   };
 
-  console.log(formData);
+  // Проверка на заполнение двух полей
+  if (emailInput.value && messageInput.value) {
+    console.log(formData);
 
-  // Сохраняем данные в локальное хранилище
-  localStorage.setItem('submitted-feedback', JSON.stringify(formData));
+    // Очищаем поля формы
+    emailInput.value = '';
+    messageInput.value = '';
 
-  // Очищаем поля формы
-  emailInput.value = '';
-  messageInput.value = '';
+    // Удаляем сохраненное состояние формы из локального хранилища
+    localStorage.removeItem('feedback-form-state');
+  }
 });
 
 
